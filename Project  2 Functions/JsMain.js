@@ -1,6 +1,6 @@
 function My_First_Function() {//defing and naming my first function
     var str = "This text is red!";//giving the variable a value
-    var result = str.fontcolor("red");//making the font color red
+    var result = str.fontcolor("red");//font color
     document.getElementById("Red_Text").innerHTML = result;//the result of the element with Red_Text id
 }
 function myFunction() {//defing and naming the function for the p element
