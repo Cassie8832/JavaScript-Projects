@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"});//changed the paragraph to red
+            $("#3").click(function() {
+                $('h1').hide();//hides the paragraph when clicked
+            });
+            $("#1").click(function() {//event setup using a convenience method
+                console.log("You clicked a paragrah!");//writes to console log when clicked
+            });
+            $("#2").fadeOut( 3000 );//fades the paragraph after 3 seconds
+        });
+
+
+
+    </script>
+
+</html>
